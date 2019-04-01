@@ -1,5 +1,28 @@
+.wrapper {
+    width: 100%;
+    background-color: #38003c;    
+    min-height: 100vh;
+    background-image: url("../../assets/bg-image.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header {
+    width: 100%;
+    background-color: #38003c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 h1 {
-    color: red;
+    color: white;
     font-size: 3em;
+    margin: 0;
+}
+
+.logo {
+    width: 4em;
 }
