@@ -1,8 +1,13 @@
-export const submitPlayer = ({playerName, playerSkillLevel, playerPosition }) => {
+export const submitPlayer = ({
+    playerName, 
+    playerSkillLevel, 
+    playerPosition 
+}) => {
+    
     return {
         type: "submit",
-        playerName,
-        playerSkillLevel,
-        playerPosition,
+        playerName: playerName,
+        playerSkillLevel: playerSkillLevel,
+        playerPosition: playerPosition,
     };
 };

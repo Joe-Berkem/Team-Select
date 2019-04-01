@@ -37,7 +37,7 @@ class PlayerForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // this.props.submitMed(this.state);
+        this.props.submitPlayer(this.state);
     }
 
     render() {
