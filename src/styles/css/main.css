@@ -187,3 +187,8 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.position-square p {
+    color: white;
+    font-weight: bold;
+}
