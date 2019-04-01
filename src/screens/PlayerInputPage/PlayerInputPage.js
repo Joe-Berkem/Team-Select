@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../components/Button/Button';
+import ButtonLink from '../../components/Button/ButtonLink';
 import Banner from '../../components/Banner/Banner';
 import PlayerForm from '../../components/PlayerForm/PlayerForm';
 
@@ -22,7 +22,7 @@ const PlayerInputPage = () => (
                 text="Player List"
             />
 
-            <Button
+            <ButtonLink
                 link="/player-input"
                 color="#00ff87"
                 text="Get Started"

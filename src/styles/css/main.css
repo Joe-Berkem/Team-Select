@@ -32,12 +32,12 @@ h1 {
 
 .container {
     min-width: 18.75em;
-    min-height: 75vh;
-    background-color: rgba(0, 255, 135, 0.3);
+    min-height: 80vh;
+    background-color: rgba(0, 255, 135, 0.43);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 2em;
+    margin: 1.5em;
 }
 
 .flex-row {
@@ -81,14 +81,19 @@ a {
 
 .button {
     height: 3em;
-    width: 6em;
+    width: 100%;
     border: none;
 }
 
 .button-container {
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+.button-container a {
+    width: 100%;
 }
 
 /* BANNER */
@@ -130,21 +135,55 @@ a {
     text-align: center;
 }
 
-.radio-group {
+/* SKILL DISPLAY */
+.star-container {
+    width: 25%;
+    margin: 1em 1em 0 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    width: 75%;
-    margin: 1em auto;
+}
+
+.star-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.star-icon {
+    width: 1em;
+}
+
+.skill-input {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0.5em 0;
     text-align: center;
 }
 
-.radio-labels {
-    display: flex;
-    justify-content: space-around;
+.position-input {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    text-align: center;
 }
 
-.radio-checks {
+.positions-wrapper {
+    width: 75%;
+    margin: 1em auto 0 auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.position-square {
+    width: 20%;
+    height: 3em;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

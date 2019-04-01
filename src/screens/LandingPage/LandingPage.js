@@ -2,7 +2,7 @@ import React from 'react';
 import ListIcon from '../../assets/list-icon.svg';
 import Customise from '../../assets/customise-icon.svg';
 import Download from '../../assets/download-icon.svg';
-import Button from '../../components/Button/Button';
+import ButtonLink from '../../components/Button/ButtonLink';
 
 const LandingPage = () => (
 
@@ -28,7 +28,7 @@ const LandingPage = () => (
                     <p>Download & share</p>
                 </div>
 
-                <Button
+                <ButtonLink
                     link="/player-input"
                     color="#00ff87"
                     text="Get Started"
