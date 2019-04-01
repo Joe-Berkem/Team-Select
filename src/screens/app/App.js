@@ -10,13 +10,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header/>
-        <Switch>
-          <Route exact path="/" component={ LandingPage }/>
-          <Route exact path="/player-input" component={ PlayerInputPage }/>
-          <Route exact path="/team-customisation" component={ TeamCustomisationPage }/>
-          <Route exact path="/final-teams" component={ FinalTeamsPage }/>
-        </Switch>
+        <div className="wrapper">
+          <Header/>
+          <Switch>
+            <div className="screenContainer">
+              <Route exact path="/" component={ LandingPage }/>
+              <Route exact path="/player-input" component={ PlayerInputPage }/>
+              <Route exact path="/team-customisation" component={ TeamCustomisationPage }/>
+              <Route exact path="/final-teams" component={ FinalTeamsPage }/>
+            </div>
+          </Switch>
+        </div>
       </Router>
     );
   }
