@@ -7,7 +7,7 @@ const Button = ({link, color, text}) => (
         <Link to={link}>
             <button 
                 className="button"
-                style={{backgroundColor: {color}}}
+                style={{backgroundColor: color}}
             >
                 
                     {text}
