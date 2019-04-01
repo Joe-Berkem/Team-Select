@@ -129,3 +129,22 @@ a {
     padding: 0.5em 0;
     text-align: center;
 }
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.radio-labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio-checks {
+    display: flex;
+    justify-content: space-around;
+}

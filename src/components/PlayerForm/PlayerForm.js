@@ -7,6 +7,7 @@ class PlayerForm extends Component {
         this.state = {
             playerName: "",
             playerSkillLevel: 0,
+            playerPosition: "",
         };
 
         this.handleChangeName = this.handleChangeName.bind(this);
@@ -20,6 +21,10 @@ class PlayerForm extends Component {
 
     handleChangeSkill(e) {
         this.setState({ playerSkillLevel: e.currentTarget.value});
+    }
+
+    handleChangePosition(e) {
+        this.setState({ playerPosition: e.currentTarget.value});
     }
 
     handleSubmit(e) {
@@ -49,7 +54,47 @@ class PlayerForm extends Component {
                     min="0" max="3" 
                     className="name-input"
                     step="1"
-                />                
+                />   
+
+                <Banner
+                    text="Preferred Position"
+                />
+
+                <div className="radio-group">
+                    <div className="radio-labels">
+                        <label>GK</label>
+                        <label>DEF</label>
+                        <label>MID</label>
+                        <label>FWD</label>
+                    </div>
+                    <div className="radio-checks">
+                        <input 
+                            type="radio" 
+                            name="radio" 
+                            value="GK"
+                            onSelect={this.handleChangePosition}
+                        />
+                        <input 
+                            type="radio" 
+                            name="radio" 
+                            value="DEF"
+                            onSelect={this.handleChangePosition}
+                        />
+                        <input 
+                            type="radio" 
+                            name="radio" 
+                            value="MID"
+                            onSelect={this.handleChangePosition}
+                        />
+                        <input 
+                            type="radio" 
+                            name="radio" 
+                            value="FWD"
+                            onSelect={this.handleChangePosition}
+                        />
+                    </div>
+                </div>
+
             </form>
         );
     }
