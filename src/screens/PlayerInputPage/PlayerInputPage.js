@@ -24,12 +24,6 @@ const PlayerInputPage = () => (
             />
 
             <PlayerList/>
-
-            <ButtonLink
-                link="/player-input"
-                color="#00ff87"
-                text="Get Started"
-            />
          
         </div>
 

@@ -35,7 +35,7 @@ h1 {
     min-height: 80vh;
     background-color: rgba(0, 255, 135, 0.43);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     margin: 1.5em;
 }
@@ -104,7 +104,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 75%;
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     color: white;
 }
 
@@ -138,7 +138,7 @@ a {
 /* SKILL DISPLAY */
 .star-container {
     width: 25%;
-    margin: 1em 1em 0 1em;
+    margin: 0 1em 0 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,4 +191,45 @@ a {
 .position-square p {
     color: white;
     font-weight: bold;
+}
+
+
+/* LIST ITEM */
+.list-item-wrapper {
+    width: 75%;
+    margin: 0.5em auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.list-item-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-label {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* TEAM CUSTOMISATION PAGE */
+.colour-display {
+    border: none;
+    padding: 0;
+    margin: 1.5em auto;
+    width: 3em;
+    height: 3em;
+    box-shadow: none !important;
+    outline: 0;
+}
+
+.kit-icon {
+    width: 3em;
+    height: 3em;
+    padding: 2em 2em 0 2em;
 }

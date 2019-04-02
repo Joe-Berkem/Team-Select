@@ -8,22 +8,37 @@ const ListItem = ({
     name, skill, position
 }) => (
 
-    <div>
+    <div className="list-item-wrapper">
+        <div className ="list-item-column">
+            <label className="list-label">Name</label>  
+            <p>{name}</p>
+        </div>
 
-        <label>Name</label>  
-        <p>{name}</p>
+        <div className ="list-item-column">
+            <label className="list-label">Skill</label> 
+            {(() => {
+                switch (skill) {
+                    case "3":   return <Star3/>;
+                    case "2": return <Star2/>;
+                    case "1":  return <Star1/>;
+                    default:     return <NoStar/>;
+                }
+            })()}
+        </div>
 
-
-        <label>Skill</label> 
-
-        {(() => {
-            switch (skill) {
-                case "3":   return <Star3/>;
-                case "2": return <Star2/>;
-                case "1":  return <Star1/>;
-                default:     return <NoStar/>;
-            }
-        })()}
+        <div className ="list-item-column">
+            <label className="list-label">Position</label>
+            <p>
+                {(() => {
+                    switch (position) {
+                        case "3":   return "FWD";
+                        case "2": return "MID";
+                        case "1":  return "DEF";
+                        default:     return "GK";
+                    }
+                })()}
+            </p>
+        </div>
 
 
     </div>
