@@ -78,7 +78,7 @@ class TeamForm extends Component {
                 />
 
                 <ButtonOnClick
-                    color="#eaff04"
+                    color="#e90052"
                     text="Confirm Details"
                 />   
 

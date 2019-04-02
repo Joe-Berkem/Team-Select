@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  }
+
 .wrapper {
     width: 100%;
     background-color: #38003c;    
@@ -5,6 +10,7 @@
     background-image: url("../../assets/bg-image.jpg"); 
     background-size: cover;
     background-position: center;
+    font-family: "Ubuntu";
 }
 
 /* HEADER */
@@ -20,12 +26,12 @@
 
 h1 {
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
 }
 
 .logo {
-    width: 4em;
+    height: 2em;
 }
 
 /* GENERAL */
@@ -83,6 +89,8 @@ a {
     height: 3em;
     width: 100%;
     border: none;
+    color: white;
+    font-weight: bold;
 }
 
 .button-container {
@@ -106,6 +114,7 @@ a {
     width: 75%;
     margin: 1em auto 0 auto;
     color: white;
+    background-color: rgba(0, 255, 135, 0.45);
 }
 
 .banner-container h4 {
