@@ -10,7 +10,7 @@ class TeamForm extends Component {
         super(props);
         this.state = {
             teamName: "",
-            kit: 0,
+            kit: 1,
             colour: "",
         };
 
@@ -34,7 +34,7 @@ class TeamForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // this.props.submitTeam(this.state);
+        this.props.submitTeam(this.state);
     }
 
     render() {
