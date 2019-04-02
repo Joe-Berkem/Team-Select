@@ -1,4 +1,5 @@
 import React from 'react';
+import ListItem from '../ListItem/ListItem'
 
 const PlayerList = ({
     list
@@ -6,11 +7,12 @@ const PlayerList = ({
 
     <ul className="listItemUl">
     { list.map(item => (
-        <li>
-            <p key={item}>{ item.name }</p>
-            <p key={item}>{ item.skill}</p>
-            <p key={item}>{ item.position }</p>
-        </li>
+        <ListItem
+            key={item}
+            name={item.name}
+            skill={item.skill}
+            position={item.position}
+        />
     ))}        
     </ul>
 )
