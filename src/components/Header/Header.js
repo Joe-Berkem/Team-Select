@@ -5,8 +5,8 @@ const Header = () => (
 
 	<>
 		<div className="header">
-			<h1 className="Header">Team Select</h1>
 			<img className="logo" src={logo} alt="Team Select Logo"/>
+			<h1 className="header-text">Team Select</h1>
 		</div>
 	</>
  
