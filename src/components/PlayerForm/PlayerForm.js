@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import Banner from '../../components/Banner/Banner';
+import NoStar from '../../components/Stars/NoStar';
+import Star1 from '../../components/Stars/Star1';
+import Star2 from '../../components/Stars/Star2';
+import Star3 from '../../components/Stars/Star3';
+import ButtonOnClick from '../ButtonOnClick/ButtonOnClick';
+import Position from '../Position/Position';
+
 
 class PlayerForm extends Component {
     constructor(props) {
@@ -7,11 +14,12 @@ class PlayerForm extends Component {
         this.state = {
             playerName: "",
             playerSkillLevel: 0,
-            playerPosition: "",
+            playerPosition: 0,
         };
 
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeSkill = this.handleChangeSkill.bind(this);
+        this.handleChangePosition = this.handleChangePosition.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -29,7 +37,7 @@ class PlayerForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // this.props.submitMed(this.state);
+        this.props.submitPlayer(this.state);
     }
 
     render() {
@@ -48,11 +56,18 @@ class PlayerForm extends Component {
                     text="Skill Level"
                 />
 
+                <div className="star-wrapper">
+                    <NoStar/>
+                    <Star1/>
+                    <Star2/>
+                    <Star3/>
+                </div>
+
                 <input
                     onChange={this.handleChangeSkill}
                     type="range"
                     min="0" max="3" 
-                    className="name-input"
+                    className="skill-input"
                     step="1"
                 />   
 
@@ -60,40 +75,37 @@ class PlayerForm extends Component {
                     text="Preferred Position"
                 />
 
-                <div className="radio-group">
-                    <div className="radio-labels">
-                        <label>GK</label>
-                        <label>DEF</label>
-                        <label>MID</label>
-                        <label>FWD</label>
-                    </div>
-                    <div className="radio-checks">
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            value="GK"
-                            onSelect={this.handleChangePosition}
-                        />
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            value="DEF"
-                            onSelect={this.handleChangePosition}
-                        />
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            value="MID"
-                            onSelect={this.handleChangePosition}
-                        />
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            value="FWD"
-                            onSelect={this.handleChangePosition}
-                        />
-                    </div>
+                <div className="positions-wrapper">
+                    <Position
+                        text="GK"
+                        color="#eaff04"
+                    />
+                    <Position
+                        text="DEF"
+                        color="#E90052"
+                    />
+                    <Position
+                        text="MID"
+                        color="#04F5FF"
+                    />
+                    <Position
+                        text="FWD"
+                        color="#38003C"
+                    />
                 </div>
+
+                <input
+                    onChange={this.handleChangePosition}
+                    type="range"
+                    min="0" max="3" 
+                    className="position-input"
+                    step="1"
+                />   
+
+                <ButtonOnClick
+                    color="#eaff04"
+                    text="Add Player"
+                />
 
             </form>
         );
