@@ -5,9 +5,11 @@ const PlayerList = ({
 }) => (
 
     <ul className="listItemUl">
-    { list.map(index => (
+    { list.map(item => (
         <li>
-            <p className="listItemText">{ index }</p>
+            <p key={item}>{ item.name }</p>
+            <p key={item}>{ item.skill}</p>
+            <p key={item}>{ item.position }</p>
         </li>
     ))}        
     </ul>

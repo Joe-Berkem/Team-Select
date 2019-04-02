@@ -3,7 +3,8 @@ const submitPlayer = (state, action) => ({...state, ...action})
 
 
 const addToPlayers = (state) => {
-    return {...state, players: [...state.players, `${state.playerName}, ${state.playerSkillLevel}, ${state.playerPosition}`]}
+    return {...state, players: [...state.players, 
+        { name:state.playerName, skill:state.playerSkillLevel, position:state.playerPosition} ]}
 }
 
 
