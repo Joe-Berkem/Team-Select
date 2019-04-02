@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PlayerForm from './PlayerForm';
+import PlayerForm from './PlayerForm.js';
 import { submitPlayer } from '../../data/actions';
 
 const mapDispatchToProps = (dispatch) => {

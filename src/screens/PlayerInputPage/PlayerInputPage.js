@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonLink from '../../components/Button/ButtonLink';
 import Banner from '../../components/Banner/Banner';
-import PlayerForm from '../../components/PlayerForm/PlayerForm';
+import PlayerForm from '../../components/PlayerForm/';
 
 const PlayerInputPage = () => (
 

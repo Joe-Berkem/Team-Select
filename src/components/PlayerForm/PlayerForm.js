@@ -103,7 +103,6 @@ class PlayerForm extends Component {
                 />   
 
                 <ButtonOnClick
-                    onClick={this.onClick}
                     color="#eaff04"
                     text="Add Player"
                 />
