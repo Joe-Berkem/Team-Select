@@ -29,10 +29,7 @@ const PlayerInputPage = () => (
             />
          
         </div>
-
-
-
-
+        
     </section>
 </>
 

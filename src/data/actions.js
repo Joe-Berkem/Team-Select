@@ -3,7 +3,7 @@ export const submitPlayer = ({
     playerSkillLevel, 
     playerPosition 
 }) => {
-    
+    console.log(playerName)
     return {
         type: "submit",
         playerName: playerName,
