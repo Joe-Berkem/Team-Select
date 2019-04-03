@@ -48,3 +48,9 @@ export const handleTeamDecrement = () => {
         type: "decrementTeamSize",
     };
 };
+
+export const resetTeams = () => {
+    return {
+      type: "resetTeams",
+    };
+};

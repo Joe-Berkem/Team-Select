@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import LandingPage from '../LandingPage/LandingPage';
 import PlayerInputPage from '../PlayerInputPage/';
-import TeamCustomisationPage from '../TeamCustomisationPage/TeamCustomisationPage';
+import TeamCustomisationPage from '../TeamCustomisationPage/';
 import FinalTeamsPage from '../FinalTeamsPage/FinalTeamsPage';
 
 class App extends Component {

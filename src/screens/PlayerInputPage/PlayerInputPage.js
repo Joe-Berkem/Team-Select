@@ -26,14 +26,15 @@ const PlayerInputPage = ({teamSize, players}) => (
 
             <TeamSize/>
 
-            {players.length < teamSize * 2 ?
+            {players.length < teamSize * 2 ? null
+            :
             <ButtonLink
                         link="/team-customisation"
                         color="#e90052"
                         text="Customise Teams"
             />
-            : null
             }
+            
 
             <Banner
                 text="Player List"
