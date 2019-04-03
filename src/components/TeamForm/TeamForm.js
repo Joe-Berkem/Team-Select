@@ -47,6 +47,7 @@ class TeamForm extends Component {
                 <input
                     onChange={this.handleChangeTeamName}
                     type="text"
+                    maxLength={15}
                     className="name-input"
                 />
                 <Banner

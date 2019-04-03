@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import LandingPage from '../LandingPage/LandingPage';
 import PlayerInputPage from '../PlayerInputPage/';
 import TeamCustomisationPage from '../TeamCustomisationPage/';
-import FinalTeamsPage from '../FinalTeamsPage/FinalTeamsPage';
+import FinalTeamsPage from '../FinalTeamsPage/';
 
 class App extends Component {
   render() {

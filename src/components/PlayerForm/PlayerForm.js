@@ -52,6 +52,7 @@ class PlayerForm extends Component {
                 <input
                     onChange={this.handleChangeName}
                     type="text"
+                    maxLength={10}
                     className="name-input"
                 />
                 <Banner

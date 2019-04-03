@@ -7,6 +7,10 @@ const addToPlayers = (state) => {
         { name:state.playerName, skill:state.playerSkillLevel, position:state.playerPosition} ]}
 }
 
+const shufflePlayers = (state) => {
+    return {...state, players: [...state.players.sort( () => Math.random() - 0.5)]}
+}
+
 const incrementTeamSize = (state) => {
     return { ...state, teamSize: state.teamSize + 1 };
 };
@@ -32,7 +36,7 @@ const resetTeams = (state) => (
 
 const reducers = (state, action) => {
     switch (action.type) {
-        case "submit": return addToPlayers(submitPlayer(state, action));
+        case "submit": return shufflePlayers(addToPlayers(submitPlayer(state, action)));
         case "submitTeam1": return submitTeam1(state,action);
         case "submitTeam2": return submitTeam2(state,action);
         case "incrementTeamSize": return incrementTeamSize(state,action);
