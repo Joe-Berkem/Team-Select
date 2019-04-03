@@ -41,6 +41,8 @@ class PlayerForm extends Component {
     }
 
     render() {
+        let {players, teamSize} = this.props;
+        console.log("hello", players, players.length, teamSize)
 
         return (
             <form 
@@ -101,11 +103,14 @@ class PlayerForm extends Component {
                     className="position-input"
                     step="1"
                 />   
-
+                {players.length < teamSize * 2 ?
                 <ButtonOnClick
                     color="#eaff04"
                     text="Add Player"
                 />
+                :
+                <p>Remove players or change team size</p>
+                }
 
             </form>
         );

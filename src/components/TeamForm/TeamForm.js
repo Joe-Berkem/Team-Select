@@ -76,11 +76,11 @@ class TeamForm extends Component {
                     type="color"
                     className="colour-display"
                 />
-
+    
                 <ButtonOnClick
                     color="#e90052"
                     text="Confirm Details"
-                />   
+                />  
 
             </form>
         );
