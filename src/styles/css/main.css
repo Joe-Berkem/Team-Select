@@ -47,6 +47,7 @@ h1 {
 .container {
     min-width: 18.75em;
     min-height: 80vh;
+    max-height: 80vh;
     background-color: rgba(0, 255, 135, 0.43);
     display: flex;
     justify-content: flex-start;
@@ -254,6 +255,10 @@ a {
     border-radius: 8px;
 }
 
+.list-item-ul {
+    overflow: scroll;
+}
+
 .list-item-column {
     display: flex;
     flex-direction: column;
@@ -307,7 +312,9 @@ a {
 /* FINAL TEAMS PAGE */
 .pitch-container1 {
     min-width: 18.75em;
+    max-width: 18.75em;
     min-height: 80vh;
+    max-height: 80vh;
     background-color: rgba(0, 255, 0, 1);
     display: flex;
     justify-content: flex-start;
@@ -321,7 +328,9 @@ a {
 
 .pitch-container2 {
     min-width: 18.75em;
+    max-width: 18.75em;
     min-height: 80vh;
+    max-height: 80vh;
     background-color: rgba(0, 255, 0, 1);
     display: flex;
     justify-content: flex-start;
@@ -333,11 +342,21 @@ a {
     background-position: center;
 }
 
+.player-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+}
+
 .player-item-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em;
 }
 
 .player-icon-container {

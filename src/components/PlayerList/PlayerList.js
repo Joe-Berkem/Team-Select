@@ -5,7 +5,7 @@ const PlayerList = ({
     list
 }) => (
 
-    <ul className="listItemUl">
+    <ul className="list-item-ul">
     { list.map(item => (
         <ListItem
             key={item}

@@ -5,7 +5,7 @@ import Star2 from '../Stars/Star2';
 import Star3 from '../Stars/Star3';
 
 const PlayerItem = ({
-    name, skill, position, colour, kit
+    name, skill, colour, kit
 }) => (
 
     <div className="player-item-wrapper">

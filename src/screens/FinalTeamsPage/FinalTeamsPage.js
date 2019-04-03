@@ -29,16 +29,18 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
                     colour={colour1}
                 />
 
-                { result[0].map(item => (
-                    <PlayerItem
-                        key={item}
-                        name={item.name}
-                        skill={item.skill}
-                        position={item.position}
-                        colour={colour1}
-                        kit={kit1}
-                    />
-                ))}        
+                <div className="player-item-container">
+                    { result[0].map(item => (
+                        <PlayerItem
+                            key={item}
+                            name={item.name}
+                            skill={item.skill}
+                            position={item.position}
+                            colour={colour1}
+                            kit={kit1}
+                        />
+                    ))}   
+                </div>     
               
             </div>
 
@@ -49,16 +51,18 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
                     colour={colour2}
                 />
 
-                { result[1].map(item => (
-                    <PlayerItem
-                        key={item}
-                        name={item.name}
-                        skill={item.skill}
-                        position={item.position}
-                        colour={colour2}
-                        kit={kit2}
-                    />
-                ))}        
+                <div className="player-item-container">
+                    { result[1].map(item => (
+                        <PlayerItem
+                            key={item}
+                            name={item.name}
+                            skill={item.skill}
+                            position={item.position}
+                            colour={colour2}
+                            kit={kit2}
+                        />
+                    ))} 
+                </div>        
             
             </div>
 
