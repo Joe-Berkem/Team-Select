@@ -1,8 +1,29 @@
 import React from 'react';
+import Banner from '../../components/Banner/Banner';
 
 const FinalTeamsPage = () => (
 
-    <h1>Final Teams Page</h1>
+    <>
+    <section className="player-input-page-wrapper flex-row">
+        
+        <div className="pitch-container1">
+            <Banner
+                text="Team 1"
+            />
+            
+           
+        </div>
+
+        <div className="pitch-container2">
+
+            <Banner
+                text="Team 2"
+            />
+         
+        </div>
+
+    </section>
+</>
  
 );
 
