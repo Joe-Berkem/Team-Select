@@ -1,8 +1,8 @@
 import React from 'react';
-import ButtonLink from '../../components/Button/ButtonLink';
 import Banner from '../../components/Banner/Banner';
 import PlayerForm from '../../components/PlayerForm/';
 import PlayerList from '../../components/PlayerList/';
+import TeamSize from '../../components/TeamSize/';
 
 const PlayerInputPage = () => (
 
@@ -18,6 +18,12 @@ const PlayerInputPage = () => (
         </div>
 
         <div className="container">
+
+            <Banner
+                text="Team Size"
+            />
+
+            <TeamSize/>
 
             <Banner
                 text="Player List"

@@ -9,5 +9,6 @@ const initial = {
     teamName2: "",
     kit2: 2,
     colour2: "",
+    teamSize: 5,
 }
 export default initial;
