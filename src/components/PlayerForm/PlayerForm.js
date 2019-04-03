@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../../components/Banner/Banner';
+import AlertBanner from '../../components/AlertBanner/AlertBanner';
 import NoStar from '../../components/Stars/NoStar';
 import Star1 from '../../components/Stars/Star1';
 import Star2 from '../../components/Stars/Star2';
@@ -42,7 +43,6 @@ class PlayerForm extends Component {
 
     render() {
         let {players, teamSize} = this.props;
-        console.log("hello", players, players.length, teamSize)
 
         return (
             <form 
@@ -109,7 +109,9 @@ class PlayerForm extends Component {
                     text="Add Player"
                 />
                 :
-                <p>Remove players or change team size</p>
+                <AlertBanner
+                    text="Remove players or change team size"
+                />
                 }
 
             </form>

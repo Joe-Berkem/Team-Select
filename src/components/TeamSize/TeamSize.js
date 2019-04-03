@@ -7,23 +7,28 @@ const TeamSize = ({
     
 }) => (
 
-    <div>
-        <p>{ teamSize } a side</p>
-        
-        {teamSize <= 3 ? null:
-        <button 
-        onClick={handleDecrement} 
-        >-
-        </button>
-        }
+    <div className="team-size-container">
+        <p
+        className="team-size-text"
+        >{ teamSize } a side</p>
+        <div>
+            {teamSize <= 3 ? null:
+            <button
+            className="team-size-button" 
+            onClick={handleDecrement} 
+            >-
+            </button>
+            }
 
-        {teamSize >= 11 ? null: 
+            {teamSize >= 11 ? null: 
 
-        <button 
-        onClick={handleIncrement} 
-        >+
-        </button>
-        }
+            <button 
+            onClick={handleIncrement} 
+            className="team-size-button"
+            >+
+            </button>
+            }
+        </div>
     </div>
 )
 

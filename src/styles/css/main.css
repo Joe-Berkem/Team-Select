@@ -134,8 +134,8 @@ a {
     width: 100%;
 }
 
-/* BANNER */
-.banner-container {
+/* BANNERS */
+.banner-container, .alert-banner-container {
     border-top: 0.1em solid white;
     border-bottom: 0.1em solid white;
     display: flex;
@@ -151,6 +151,16 @@ a {
     padding: 0.5em;
     font-weight: bold;
 }
+
+.alert-banner-container {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.alert-banner-container h4 {
+    padding: 0.5em;
+    font-weight: bold;
+}
+
 
 /*PLAYER INPUT PAGE */
 
@@ -271,4 +281,25 @@ a {
     width: 3em;
     height: 3em;
     padding: 2em 2em 0 2em;
+}
+
+/* TEAMSIZE COMPONENT */
+.team-size-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    color: white;
+}
+
+.team-size-text {
+    font-size: 1.3em;
+}
+
+.team-size-button {
+    color: white;
+    background-color: #38003c;
+    border: none;
+    margin: 0.10em;
 }
