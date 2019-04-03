@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
+import ListItem from '../../components/ListItem/ListItem'
 
 const FinalTeamsPage = ({players, teamSize}) => {
 
@@ -17,7 +18,7 @@ const FinalTeamsPage = ({players, teamSize}) => {
     }
     let result = splitTeams(players, teamSize);
     
-    console.log(result);
+    console.log(result[0])
 
     return (
     <>
@@ -27,8 +28,18 @@ const FinalTeamsPage = ({players, teamSize}) => {
                 <Banner
                     text="Team 1"
                 />
-                
-            
+
+                <ul className="listItemUl">
+                    { result[0].map(item => (
+                        <ListItem
+                            key={item}
+                            name={item.name}
+                            skill={item.skill}
+                            position={item.position}
+                        />
+                    ))}        
+                </ul>
+
             </div>
 
             <div className="pitch-container2">
@@ -36,6 +47,17 @@ const FinalTeamsPage = ({players, teamSize}) => {
                 <Banner
                     text="Team 2"
                 />
+
+                <ul className="listItemUl">
+                    { result[1].map(item => (
+                        <ListItem
+                            key={item}
+                            name={item.name}
+                            skill={item.skill}
+                            position={item.position}
+                        />
+                    ))}        
+                </ul>
             
             </div>
 
