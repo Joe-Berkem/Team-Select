@@ -8,17 +8,16 @@ const FinalTeamsPage = ({players, teamSize}) => {
         let index = 0;
         let arrayLength = array.length;
         let tempArray = [];
-        
+
         for (index = 0; index < arrayLength; index += teamSize) {
             let myChunk = array.slice(index, index+teamSize);
-            // add other conditionals 
             tempArray.push(myChunk);
         }
         return tempArray;
     }
     let result = splitTeams(players, teamSize);
     
-    console.log(result[0])
+    console.log(result)
 
     return (
     <>
