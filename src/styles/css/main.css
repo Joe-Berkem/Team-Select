@@ -332,3 +332,25 @@ a {
     background-size: cover;
     background-position: center;
 }
+
+.player-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.player-name-text {
+    display: flex;
+    justify-content: center;
+}
+
+.player-star-container {
+    display: flex;
+    justify-content: center;
+}
