@@ -36,3 +36,21 @@ export const submitTeam2 = ({
         colour2: colour,
     };
 };
+
+export const handleTeamIncrement = () => {
+    return {
+        type: "incrementTeamSize",
+    };
+};
+   
+export const handleTeamDecrement = () => {
+    return {
+        type: "decrementTeamSize",
+    };
+};
+
+export const resetTeams = () => {
+    return {
+      type: "resetTeams",
+    };
+};

@@ -1,10 +1,11 @@
 import React from 'react';
-import ButtonLink from '../../components/Button/ButtonLink';
 import Banner from '../../components/Banner/Banner';
 import PlayerForm from '../../components/PlayerForm/';
 import PlayerList from '../../components/PlayerList/';
+import TeamSize from '../../components/TeamSize/';
+import ButtonLink from '../../components/Button/ButtonLink';
 
-const PlayerInputPage = () => (
+const PlayerInputPage = ({teamSize, players}) => (
 
     <>
     <section className="player-input-page-wrapper flex-row">
@@ -18,6 +19,22 @@ const PlayerInputPage = () => (
         </div>
 
         <div className="container">
+
+            <Banner
+                text="Team Size"
+            />
+
+            <TeamSize/>
+
+            {players.length < teamSize * 2 ? null
+            :
+            <ButtonLink
+                        link="/team-customisation"
+                        color="#e90052"
+                        text="Customise Teams"
+            />
+            }
+            
 
             <Banner
                 text="Player List"

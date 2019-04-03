@@ -76,11 +76,13 @@ class TeamForm extends Component {
                     type="color"
                     className="colour-display"
                 />
-
+                {!this.props.teamName1 || !this.props.teamName2 ?
                 <ButtonOnClick
                     color="#e90052"
                     text="Confirm Details"
-                />   
+                />  
+                : null
+                }
 
             </form>
         );
