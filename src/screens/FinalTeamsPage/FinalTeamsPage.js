@@ -16,7 +16,28 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
     
     let ratings = sortPlayersSkills(players);
 
-    console.log(ratings);
+    console.log(ratings, "should be lowest to highest");
+
+
+    let splitTeamsNew = ( array ) => {
+        let index = 0;
+        let arrayLength = array.length;
+        let team1Array = [];
+        let team2Array = [];
+    
+        for (index = 0; index < arrayLength; index += 1) {
+            if (index % 2 === 0) {
+                team1Array.push(array[index])
+            }else{
+                team2Array.push(array[index])
+            }
+        }
+        return [team1Array, team2Array]
+    }
+    
+    let teamsSplit = splitTeamsNew(ratings);
+
+    console.log(teamsSplit,"should be split evenly");
 
 
 
@@ -31,9 +52,9 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
         }
         return tempArray;
     }
-    let result = splitTeams(players, teamSize);
+    let result = splitTeams(ratings, teamSize);
     
-    console.log(result)
+    console.log(result, "orignal split function")
 
     return (
     <>
