@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/logo-purple.09139305.svg"
   },
   {
-    "revision": "65ae0cc06efec89e8048",
-    "url": "/Team-Select/static/css/main.24073600.chunk.css"
+    "revision": "908e8123687b2c1dae97",
+    "url": "/Team-Select/static/css/main.9a01eff3.chunk.css"
   },
   {
     "revision": "9fd07a74791d8c26708b",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/download-icon.c6ab770f.svg"
   },
   {
-    "revision": "65ae0cc06efec89e8048",
-    "url": "/Team-Select/static/js/main.0e4d4060.chunk.js"
+    "revision": "908e8123687b2c1dae97",
+    "url": "/Team-Select/static/js/main.7931ada3.chunk.js"
   },
   {
     "revision": "4ce12a7ddc71c115b86cc4471e6100bf",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/Futura Bold.6d93ab94.otf"
   },
   {
-    "revision": "cb64a6dbaf68f689e3d3b8eecfc5f9e4",
-    "url": "/Team-Select/static/media/football-pitch-half1.cb64a6db.jpg"
+    "revision": "bfa961a728d71d2e54d7f48e99cf883b",
+    "url": "/Team-Select/static/media/footy-pitch-bg-right.bfa961a7.jpg"
   },
   {
-    "revision": "baefdb8318d7b5bc08cd0ed6128a00f7",
-    "url": "/Team-Select/static/media/footy-pitch-half-2.baefdb83.jpg"
+    "revision": "bdf372360326b14050e60ebe34df29a9",
+    "url": "/Team-Select/static/media/footy-pitch-bg-left.bdf37236.jpg"
   },
   {
     "revision": "238c32cd050af8099eeaa8f50dd04ec9",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/css/2.457e6996.chunk.css"
   },
   {
-    "revision": "17a0c981a6bc78c12b1d54c5f33af5cb",
+    "revision": "e462f02258f0ebd5e19ad3f88c5486fd",
     "url": "/Team-Select/index.html"
   }
 ];
