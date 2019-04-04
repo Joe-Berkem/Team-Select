@@ -252,7 +252,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    border-radius: 8px;
 }
 
 .list-item-ul {
@@ -264,6 +263,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0.5em;
 }
 
 .list-label {

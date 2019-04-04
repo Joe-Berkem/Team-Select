@@ -36,6 +36,12 @@ class PlayerForm extends Component {
         this.setState({ playerPosition: e.currentTarget.value});
     }
 
+    onKeyPress(event) {
+        if (event.which === 13 /* Enter */) {
+          event.preventDefault();
+        }
+    }
+   
     handleSubmit(e) {
         e.preventDefault();
         this.props.submitPlayer(this.state);
@@ -50,6 +56,7 @@ class PlayerForm extends Component {
             <form 
                 onSubmit={this.handleSubmit}
                 className="player-form-container"
+                onKeyPress={this.onKeyPress}
             >
                 <input
                     onChange={this.handleChangeName}
