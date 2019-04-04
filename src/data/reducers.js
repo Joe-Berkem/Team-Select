@@ -13,13 +13,10 @@ const shufflePlayers = (state) => {
 }
 
 const sortPlayersSkills = (state) => {
-    console.log("sortplayers being triggered")
     const players = state.players;
-  
     players.sort(function (a, b) {
         return a.skill - b.skill;
     }); 
-    
     return {...state, players};
 };
 

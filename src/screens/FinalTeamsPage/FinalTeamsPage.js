@@ -4,40 +4,33 @@ import PlayerItem from '../../components/PlayerItem/PlayerItem'
 
 const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colour2, kit1, kit2 }) => {
 
-    
-    // let sortPlayersSkills = ( array ) => {
-    
-    //     array.sort(function (a, b) {
-    //         return a.skill - b.skill;
-    //     }); 
-
-    //     return array;
-    // }
-    
-    // let ratings = sortPlayersSkills(players);
-
-    // console.log(ratings, "should be lowest to highest");
-
 
     // let splitTeamsNew = ( array ) => {
+    //     console.log(array, "array passed to splitnewfunction");
     //     let index = 0;
-    //     let arrayLength = array.length;
     //     let team1Array = [];
     //     let team2Array = [];
     
-    //     for (index = 0; index < arrayLength; index += 1) {
+    //     for (index = 0; index < array.Length; index += 1) {
     //         if (index % 2 === 0) {
     //             team1Array.push(array[index])
+    //             console.log(team1Array, "after push")
     //         }else{
     //             team2Array.push(array[index])
+    //             console.log(team2Array, "after push")
     //         }
     //     }
+    //     console.log(team1Array, "team 1 at end of split")
+    //     console.log(team2Array, "team 2 at end of split")
     //     return [team1Array, team2Array]
+        
     // }
-    
-    // let teamsSplit = splitTeamsNew(ratings);
 
-    // console.log(teamsSplit,"should be split evenly");
+    // let playersCopy = players;
+
+    // let result = splitTeamsNew(playersCopy);
+    // console.log(result, "after being given players")
+
 
 
 
