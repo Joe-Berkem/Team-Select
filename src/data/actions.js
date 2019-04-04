@@ -49,6 +49,12 @@ export const handleTeamDecrement = () => {
     };
 };
 
+export const resetPlayers = () => {
+    return {
+      type: "resetPlayers",
+    };
+};
+
 export const resetTeams = () => {
     return {
       type: "resetTeams",

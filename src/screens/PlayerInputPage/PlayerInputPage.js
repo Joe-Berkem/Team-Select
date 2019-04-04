@@ -1,11 +1,12 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
+import BannerReset from '../../components/BannerReset/BannerReset';
 import PlayerForm from '../../components/PlayerForm/';
 import PlayerList from '../../components/PlayerList/';
 import TeamSize from '../../components/TeamSize/';
 import ButtonLink from '../../components/Button/ButtonLink';
 
-const PlayerInputPage = ({teamSize, players}) => (
+const PlayerInputPage = ({teamSize, players, resetPlayers}) => (
 
     <>
     <section className="player-input-page-wrapper flex-row">
@@ -36,8 +37,9 @@ const PlayerInputPage = ({teamSize, players}) => (
             }
             
 
-            <Banner
+            <BannerReset
                 text="Player List"
+                onClick={resetPlayers}
             />
 
             <PlayerList/>

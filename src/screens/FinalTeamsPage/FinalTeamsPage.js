@@ -4,6 +4,22 @@ import PlayerItem from '../../components/PlayerItem/PlayerItem'
 
 const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colour2, kit1, kit2 }) => {
 
+    
+    let sortPlayersSkills = ( array ) => {
+    
+        array.sort(function (a, b) {
+            return a.skill - b.skill;
+        }); 
+
+        return array;
+    }
+    
+    let ratings = sortPlayersSkills(players);
+
+    console.log(ratings);
+
+
+
     function splitTeams(array, teamSize){
         let index = 0;
         let arrayLength = array.length;

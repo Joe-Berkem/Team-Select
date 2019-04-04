@@ -34,6 +34,13 @@ const resetTeams = (state) => (
     }
 )
 
+const resetPlayers = (state) => (
+    {...state, 
+        players: [],
+        
+    }
+)
+
 const reducers = (state, action) => {
     switch (action.type) {
         case "submit": return shufflePlayers(addToPlayers(submitPlayer(state, action)));
@@ -42,6 +49,7 @@ const reducers = (state, action) => {
         case "incrementTeamSize": return incrementTeamSize(state,action);
         case "decrementTeamSize": return decrementTeamSize(state,action);
         case "resetTeams": return resetTeams(state, action);
+        case "resetPlayers": return resetPlayers(state, action);
         default: return state;
     }
 };
