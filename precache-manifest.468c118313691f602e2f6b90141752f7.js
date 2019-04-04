@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/logo-purple.09139305.svg"
   },
   {
-    "revision": "908e8123687b2c1dae97",
+    "revision": "e47ee003664e6d307bc2",
     "url": "/Team-Select/static/css/main.9a01eff3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/bg-image.29e97e3a.jpg"
   },
   {
-    "revision": "dc3406fc767ab98fe109",
-    "url": "/Team-Select/static/js/2.3789d0e8.chunk.js"
+    "revision": "2eb7beb3ef271d044c32",
+    "url": "/Team-Select/static/js/2.21616706.chunk.js"
   },
   {
     "revision": "891b5c2a443b8bdf4d01870ac5c51d98",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/download-icon.c6ab770f.svg"
   },
   {
-    "revision": "908e8123687b2c1dae97",
-    "url": "/Team-Select/static/js/main.7931ada3.chunk.js"
+    "revision": "e47ee003664e6d307bc2",
+    "url": "/Team-Select/static/js/main.0b9f64cf.chunk.js"
   },
   {
     "revision": "4ce12a7ddc71c115b86cc4471e6100bf",
@@ -76,11 +76,11 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/Ubuntu-Regular.238c32cd.ttf"
   },
   {
-    "revision": "dc3406fc767ab98fe109",
+    "revision": "2eb7beb3ef271d044c32",
     "url": "/Team-Select/static/css/2.457e6996.chunk.css"
   },
   {
-    "revision": "e462f02258f0ebd5e19ad3f88c5486fd",
+    "revision": "78d23d7a437a079d51ecd636eea84106",
     "url": "/Team-Select/index.html"
   }
 ];
