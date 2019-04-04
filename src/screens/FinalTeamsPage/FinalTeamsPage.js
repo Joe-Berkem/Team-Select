@@ -5,39 +5,39 @@ import PlayerItem from '../../components/PlayerItem/PlayerItem'
 const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colour2, kit1, kit2 }) => {
 
     
-    let sortPlayersSkills = ( array ) => {
+    // let sortPlayersSkills = ( array ) => {
     
-        array.sort(function (a, b) {
-            return a.skill - b.skill;
-        }); 
+    //     array.sort(function (a, b) {
+    //         return a.skill - b.skill;
+    //     }); 
 
-        return array;
-    }
+    //     return array;
+    // }
     
-    let ratings = sortPlayersSkills(players);
+    // let ratings = sortPlayersSkills(players);
 
-    console.log(ratings, "should be lowest to highest");
+    // console.log(ratings, "should be lowest to highest");
 
 
-    let splitTeamsNew = ( array ) => {
-        let index = 0;
-        let arrayLength = array.length;
-        let team1Array = [];
-        let team2Array = [];
+    // let splitTeamsNew = ( array ) => {
+    //     let index = 0;
+    //     let arrayLength = array.length;
+    //     let team1Array = [];
+    //     let team2Array = [];
     
-        for (index = 0; index < arrayLength; index += 1) {
-            if (index % 2 === 0) {
-                team1Array.push(array[index])
-            }else{
-                team2Array.push(array[index])
-            }
-        }
-        return [team1Array, team2Array]
-    }
+    //     for (index = 0; index < arrayLength; index += 1) {
+    //         if (index % 2 === 0) {
+    //             team1Array.push(array[index])
+    //         }else{
+    //             team2Array.push(array[index])
+    //         }
+    //     }
+    //     return [team1Array, team2Array]
+    // }
     
-    let teamsSplit = splitTeamsNew(ratings);
+    // let teamsSplit = splitTeamsNew(ratings);
 
-    console.log(teamsSplit,"should be split evenly");
+    // console.log(teamsSplit,"should be split evenly");
 
 
 
@@ -52,7 +52,7 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
         }
         return tempArray;
     }
-    let result = splitTeams(ratings, teamSize);
+    let result = splitTeams(players, teamSize);
     
     console.log(result, "orignal split function")
 

@@ -60,3 +60,9 @@ export const resetTeams = () => {
       type: "resetTeams",
     };
 };
+
+export const sortPlayersSkills = () => {
+    return {
+      type: "sortPlayersSkills",
+    };
+};
