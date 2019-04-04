@@ -36,9 +36,17 @@ class PlayerForm extends Component {
         this.setState({ playerPosition: e.currentTarget.value});
     }
 
+    onKeyPress(event) {
+        if (event.which === 13 /* Enter */) {
+          event.preventDefault();
+        }
+    }
+   
     handleSubmit(e) {
         e.preventDefault();
         this.props.submitPlayer(this.state);
+        this.setState({ playerName: "", playerSkillLevel: 0,
+        playerPosition: 0,});
     }
 
     render() {
@@ -48,12 +56,14 @@ class PlayerForm extends Component {
             <form 
                 onSubmit={this.handleSubmit}
                 className="player-form-container"
+                onKeyPress={this.onKeyPress}
             >
                 <input
                     onChange={this.handleChangeName}
                     type="text"
                     maxLength={10}
                     className="name-input"
+                    value={this.state.playerName}
                 />
                 <Banner
                     text="Skill Level"
@@ -72,6 +82,7 @@ class PlayerForm extends Component {
                     min="0" max="3" 
                     className="skill-input"
                     step="1"
+                    value={this.state.playerSkillLevel}
                 />   
 
                 <Banner
@@ -103,6 +114,7 @@ class PlayerForm extends Component {
                     min="0" max="3" 
                     className="position-input"
                     step="1"
+                    value={this.state.playerPosition}
                 />   
                 {players.length < teamSize * 2 ?
                 <ButtonOnClick

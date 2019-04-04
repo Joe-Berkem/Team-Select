@@ -3,6 +3,7 @@ const submitPlayer = (state, action) => ({...state, ...action})
 
 
 const addToPlayers = (state) => {
+    console.log (state,"add to players function")
     return {...state, players: [...state.players, 
         { name:state.playerName, skill:state.playerSkillLevel, position:state.playerPosition} ]}
 }
@@ -10,6 +11,15 @@ const addToPlayers = (state) => {
 const shufflePlayers = (state) => {
     return {...state, players: [...state.players.sort( () => Math.random() - 0.5)]}
 }
+
+const sortPlayersSkills = (state) => {
+    const players = state.players;
+    players.sort(function (a, b) {
+        return a.skill - b.skill;
+    }); 
+    return {...state, players};
+};
+
 
 const incrementTeamSize = (state) => {
     return { ...state, teamSize: state.teamSize + 1 };
@@ -34,6 +44,13 @@ const resetTeams = (state) => (
     }
 )
 
+const resetPlayers = (state) => (
+    {...state, 
+        players: [],
+        
+    }
+)
+
 const reducers = (state, action) => {
     switch (action.type) {
         case "submit": return shufflePlayers(addToPlayers(submitPlayer(state, action)));
@@ -42,6 +59,8 @@ const reducers = (state, action) => {
         case "incrementTeamSize": return incrementTeamSize(state,action);
         case "decrementTeamSize": return decrementTeamSize(state,action);
         case "resetTeams": return resetTeams(state, action);
+        case "resetPlayers": return resetPlayers(state, action);
+        case "sortPlayersSkills": return sortPlayersSkills(state, action);
         default: return state;
     }
 };

@@ -148,10 +148,38 @@ a {
     background-color: rgba(0, 255, 135, 0.45);
 }
 
+.banner-reset-container {
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+    margin: 1em auto 0 auto;
+    color: white;
+    background-color: rgba(0, 255, 135, 0.45);
+}
+
 .banner-container h4 {
     padding: 0.5em;
     font-weight: bold;
 }
+
+.banner-reset-container h4 {
+    padding: 0.5em;
+    font-weight: bold;
+    border: none;
+}
+
+.banner-reset-container button {
+    background-color: red;
+    border: none;
+    color: white;
+    height: 100%;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
 
 .alert-banner-container {
     background-color: rgba(255, 0, 0, 1);
@@ -252,11 +280,10 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    border-radius: 8px;
 }
 
 .list-item-ul {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .list-item-column {
@@ -264,6 +291,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0.5em;
 }
 
 .list-label {
@@ -275,7 +303,7 @@ a {
 .colour-display {
     border: none;
     padding: 0;
-    margin: 1.5em auto;
+    margin: 0.80em auto;
     width: 3em;
     height: 3em;
     box-shadow: none !important;
@@ -285,7 +313,7 @@ a {
 .kit-icon {
     width: 3em;
     height: 3em;
-    padding: 2em 2em 0 2em;
+    padding: 1em 1em 0 1em;
 }
 
 /* TEAMSIZE COMPONENT */

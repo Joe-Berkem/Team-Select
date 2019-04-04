@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TeamCustomisationPage from './TeamCustomisationPage.js';
-import { resetTeams } from '../../data/actions';
+import { resetTeams, sortPlayersSkills } from '../../data/actions';
 
 
 const mapStateToProps = (state) => {
@@ -13,6 +13,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     resetTeams: (data) => dispatch(resetTeams(data)),
+    sortPlayersSkills: (data) => dispatch(sortPlayersSkills(data))
   };
 };
 

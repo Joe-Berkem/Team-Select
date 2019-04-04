@@ -3,9 +3,9 @@ import Banner from '../../components/Banner/Banner';
 import TeamForm1 from '../../components/TeamForm/TeamForm1';
 import TeamForm2 from '../../components/TeamForm/TeamForm2';
 import ButtonReset from '../../components/ButtonReset/ButtonReset';
-import ButtonLink from '../../components/Button/ButtonLink';
+import ButtonLinkOnClick from '../../components/ButtonLinkOnClick/ButtonLinkOnClick';
 
-const TeamCustomisationPage = ({teamName1, teamName2, resetTeams}) => (
+const TeamCustomisationPage = ({teamName1, teamName2, resetTeams, sortPlayersSkills}) => (
 
     <>
     <section className="player-input-page-wrapper flex-row">
@@ -36,10 +36,11 @@ const TeamCustomisationPage = ({teamName1, teamName2, resetTeams}) => (
             <TeamForm2/>
 
             {teamName1 && teamName2 ?
-            <ButtonLink
+            <ButtonLinkOnClick
                 link="/final-teams"
                 color="#eaff04"
                 text="Generate Teams"
+                onClick={sortPlayersSkills}
             />     
             : null
             }

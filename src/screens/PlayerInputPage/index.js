@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import PlayerInputPage from './PlayerInputPage';
+import { resetPlayers } from '../../data/actions';
 
 
 const mapStateToProps = state => {
@@ -9,5 +10,11 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    resetPlayers: (data) => dispatch(resetPlayers(data)),
+  };
+};
 
-export default connect(mapStateToProps)(PlayerInputPage);
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerInputPage);
