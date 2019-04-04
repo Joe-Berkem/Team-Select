@@ -49,6 +49,7 @@ class TeamForm extends Component {
                     type="text"
                     maxLength={15}
                     className="name-input"
+                    required
                 />
                 <Banner
                     text="Select a kit"

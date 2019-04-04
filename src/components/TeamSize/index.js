@@ -6,6 +6,7 @@ import { handleTeamIncrement, handleTeamDecrement } from "../../data/actions";
 const mapStateToProps = state => {
     return {
         teamSize: state.teamSize,
+        players: state.players
        
     };
 };

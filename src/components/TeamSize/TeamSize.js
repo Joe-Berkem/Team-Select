@@ -3,7 +3,8 @@ import React from 'react';
 const TeamSize = ({ 
     teamSize, 
     handleIncrement, 
-    handleDecrement
+    handleDecrement,
+    players
     
 }) => (
 

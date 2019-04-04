@@ -65,6 +65,10 @@ a {
     color: white;
 }
 
+.margin-bottom {
+    margin-bottom: 0.5em!important;
+}
+
 
 /* LANDING PAGE */
 
@@ -109,6 +113,10 @@ a {
     text-align: center;
 }
 
+div.flex-row.lp-detail {
+    margin-top: 1.15em;
+}
+
 
 .icon {
     padding: 2em;
@@ -122,6 +130,11 @@ a {
     border: none;
     color: white;
     font-weight: bold;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #04f5ff!important;
 }
 
 .button-container {
@@ -133,6 +146,10 @@ a {
 
 .button-container a {
     width: 100%;
+}
+
+.button-container a:hover {
+    background-color: #04f5ff;
 }
 
 /* BANNERS */
@@ -175,14 +192,19 @@ a {
     background-color: red;
     border: none;
     color: white;
-    height: 100%;
+    height: 97%;
     font-weight: bold;
     margin-left: 1em;
+}
+
+.banner-reset-container button:hover {
+    background-color: #04f5ff;
 }
 
 
 .alert-banner-container {
     background-color: rgba(255, 0, 0, 1);
+    margin: 0 auto 1em auto!important;
 }
 
 .alert-banner-container h4 {
@@ -216,15 +238,15 @@ a {
 /* SKILL DISPLAY */
 .star-container {
     width: 25%;
-    margin: 0 1em 0 1em;
+    /* margin: 0 1em 0 1em; */
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .star-wrapper {
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 1.25em auto 0.3em auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -243,14 +265,14 @@ a {
 
 .position-input {
     width: 65%;
-    margin: 0 auto;
+    margin: 0.5em auto;
     padding: 0.5em 0;
     text-align: center;
 }
 
 .positions-wrapper {
     width: 75%;
-    margin: 1em auto 0 auto;
+    margin: 1.25em auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -323,6 +345,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     color: white;
 }
 
@@ -334,7 +357,11 @@ a {
     color: white;
     background-color: #38003c;
     border: none;
-    margin: 0.10em;
+    margin: 0.5em 0.10em;
+}
+
+.team-size-button:hover {
+    background-color: #04f5ff;
 }
 
 /* FINAL TEAMS PAGE */
@@ -347,9 +374,9 @@ a {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 1.5em 0;
+    margin: 1em 0;
     border: 0.5em solid white;
-    background-image: url("../../assets/football-pitch-half1.jpg");
+    background-image: url("../../assets/footy-pitch-bg-left.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -363,9 +390,9 @@ a {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 1.5em 0;
+    margin: 1em 0;
     border: 0.5em solid white;
-    background-image: url("../../assets/footy-pitch-half-2.jpg");
+    background-image: url("../../assets/footy-pitch-bg-right.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -395,6 +422,7 @@ a {
 .player-name-text {
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .player-star-container {

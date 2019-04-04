@@ -64,6 +64,7 @@ class PlayerForm extends Component {
                     maxLength={10}
                     className="name-input"
                     value={this.state.playerName}
+                    required
                 />
                 <Banner
                     text="Skill Level"
@@ -123,7 +124,7 @@ class PlayerForm extends Component {
                 />
                 :
                 <AlertBanner
-                    text="Remove players or change team size"
+                    text="Reset player list or increase team size"
                 />
                 }
 
