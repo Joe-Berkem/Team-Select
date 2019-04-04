@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import LandingPage from '../LandingPage/LandingPage';
 import PlayerInputPage from '../PlayerInputPage/';
@@ -9,7 +9,7 @@ import FinalTeamsPage from '../FinalTeamsPage/';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <div className="wrapper">
           <Header/>
           <Switch>
@@ -21,7 +21,7 @@ class App extends Component {
             </div>
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
