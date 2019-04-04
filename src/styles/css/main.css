@@ -256,7 +256,7 @@ a {
 }
 
 .list-item-ul {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .list-item-column {

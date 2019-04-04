@@ -39,6 +39,8 @@ class PlayerForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.submitPlayer(this.state);
+        this.setState({ playerName: "", playerSkillLevel: 0,
+        playerPosition: 0,});
     }
 
     render() {
@@ -54,6 +56,7 @@ class PlayerForm extends Component {
                     type="text"
                     maxLength={10}
                     className="name-input"
+                    value={this.state.playerName}
                 />
                 <Banner
                     text="Skill Level"
@@ -72,6 +75,7 @@ class PlayerForm extends Component {
                     min="0" max="3" 
                     className="skill-input"
                     step="1"
+                    value={this.state.playerSkillLevel}
                 />   
 
                 <Banner
@@ -103,6 +107,7 @@ class PlayerForm extends Component {
                     min="0" max="3" 
                     className="position-input"
                     step="1"
+                    value={this.state.playerPosition}
                 />   
                 {players.length < teamSize * 2 ?
                 <ButtonOnClick
