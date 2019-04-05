@@ -66,3 +66,10 @@ export const sortPlayersSkills = () => {
       type: "sortPlayersSkills",
     };
 };
+
+export const resetAll = () => {
+    return {
+      type: "resetAll",
+    };
+};
+

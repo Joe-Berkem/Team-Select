@@ -13,7 +13,7 @@ const TeamSize = ({
         className="team-size-text"
         >{ teamSize } a side</p>
         <div>
-            {teamSize <= 3 ? null:
+            {teamSize <= 3 || players.length === teamSize * 2 ? null:
             <button
             className="team-size-button" 
             onClick={handleDecrement} 

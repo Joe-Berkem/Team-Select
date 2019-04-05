@@ -16,7 +16,7 @@
     background-image: url("../../assets/bg-image.jpg"); 
     background-size: cover;
     background-position: center;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -34,12 +34,29 @@ h1 {
     color: #00ff87;
     font-size: 1.1em;
     margin: 0 0.5em;
-    font-family: "Futura";
+    font-family: "Futura", Helvetica, sans-serif;
     padding: 1.6em 0;
 }
 
 .logo {
     height: 1.4em;
+}
+
+button.reset-button-header {
+    position: absolute;
+    top: 1.6em;
+    right: 1.5em;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: white;
+    background-color: #e90052;
+    height: 2em;
+    border: none;
+    z-index: 1;
+}
+
+button.reset-button-header:hover {
+    background-color: #04f5ff!important;
 }
 
 /* GENERAL */
@@ -458,7 +475,7 @@ div.flex-row.lp-detail {
 
     h1 {
         font-size: 0.85em;
-        margin: 0 0.5em;
+        margin: 0 9em 0 0;
         font-family: "Futura";
         padding: 1.2em 0;
     }
@@ -466,7 +483,14 @@ div.flex-row.lp-detail {
     .logo {
         height: 1.2em;
     }
-     
+    
+    button.reset-button-header {
+        position: absolute;
+        top: 0.75em;
+        right: 1em;
+        font-size: 0.75em;
+        
+    }
 }
 
 

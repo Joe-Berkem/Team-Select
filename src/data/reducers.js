@@ -1,3 +1,4 @@
+import initial from "./initial";
 
 const submitPlayer = (state, action) => ({...state, ...action})
 
@@ -46,9 +47,12 @@ const resetTeams = (state) => (
 
 const resetPlayers = (state) => (
     {...state, 
-        players: [],
-        
+        players: [], 
     }
+)
+
+const resetAll = (state) => (
+    {...state, initial}
 )
 
 const reducers = (state, action) => {
@@ -61,6 +65,7 @@ const reducers = (state, action) => {
         case "resetTeams": return resetTeams(state, action);
         case "resetPlayers": return resetPlayers(state, action);
         case "sortPlayersSkills": return sortPlayersSkills(state, action);
+        case "resetAll": return resetTeams(resetTeams(resetAll(state,action)));
         default: return state;
     }
 };
