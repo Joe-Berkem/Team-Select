@@ -5,6 +5,7 @@
   "homepage": "https://Joe-Berkem.github.io/Team-Select/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "hash-router": "^0.4.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
