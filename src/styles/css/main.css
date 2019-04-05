@@ -404,6 +404,7 @@ div.flex-row.lp-detail {
     align-items: center;
     height: 100%;
     flex-wrap: wrap-reverse;
+    margin: 1em;
 }
 
 .player-item-wrapper {
