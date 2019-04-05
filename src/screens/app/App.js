@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header/';
 import LandingPage from '../LandingPage/LandingPage';
 import PlayerInputPage from '../PlayerInputPage/';
 import TeamCustomisationPage from '../TeamCustomisationPage/';
