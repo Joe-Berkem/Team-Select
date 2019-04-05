@@ -404,6 +404,7 @@ div.flex-row.lp-detail {
     align-items: center;
     height: 100%;
     flex-wrap: wrap-reverse;
+    margin: 1em;
 }
 
 .player-item-wrapper {
@@ -428,4 +429,61 @@ div.flex-row.lp-detail {
 .player-star-container {
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 400px) {
+ 
+    .container, .pitch-container1, .pitch-container2 {
+        min-width: 100%;
+        min-height: 60vh;
+        max-height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .pitch-container1, .pitch-container2 {
+        min-width: none;
+        max-width: 18.75em;
+        min-height: 60vh;
+        max-height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 0.85em;
+        margin: 0 0.5em;
+        font-family: "Futura";
+        padding: 1.2em 0;
+    }
+    
+    .logo {
+        height: 1.2em;
+    }
+     
+}
+
+
+@media only screen and (max-width: 640px) {
+    .player-input-page-wrapper {
+        flex-direction: column;
+        min-height: 100%;
+        align-items: center;
+    }
+    .container {
+        min-height: 100%;
+    }
+    .wrapper {
+        min-height: none;
+    }
+
+    .button {
+        margin-bottom: 1em;
+    }
 }
