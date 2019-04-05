@@ -5,49 +5,50 @@ import PlayerItem from '../../components/PlayerItem/PlayerItem'
 const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colour2, kit1, kit2 }) => {
 
 
-    // let splitTeamsNew = ( array ) => {
-    //     console.log(array, "array passed to splitnewfunction");
-    //     let index = 0;
-    //     let team1Array = [];
-    //     let team2Array = [];
-    
-    //     for (index = 0; index < array.Length; index += 1) {
-    //         if (index % 2 === 0) {
-    //             team1Array.push(array[index])
-    //             console.log(team1Array, "after push")
-    //         }else{
-    //             team2Array.push(array[index])
-    //             console.log(team2Array, "after push")
-    //         }
-    //     }
-    //     console.log(team1Array, "team 1 at end of split")
-    //     console.log(team2Array, "team 2 at end of split")
-    //     return [team1Array, team2Array]
-        
-    // }
-
-    // let playersCopy = players;
-
-    // let result = splitTeamsNew(playersCopy);
-    // console.log(result, "after being given players")
-
-
-
-
-    function splitTeams(array, teamSize){
+    function splitTeamsNew(array) {
+        console.log(array, "array passed to splitnewfunction");
         let index = 0;
-        let arrayLength = array.length;
-        let tempArray = [];
-
-        for (index = 0; index < arrayLength; index += teamSize) {
-            let myChunk = array.slice(index, index+teamSize);
-            tempArray.push(myChunk);
-        }
-        return tempArray;
-    }
-    let result = splitTeams(players, teamSize);
+        let team1Array = [];
+        let team2Array = [];
     
-    console.log(result, "orignal split function")
+        for (index = 0; index < array.length; index += 1) {
+            if (index % 2 === 0) {
+                team1Array.push(array[index])
+                console.log(team1Array, "after push")
+            }else{
+                team2Array.push(array[index])
+                console.log(team2Array, "after push")
+            }
+        }
+        console.log(team1Array, "team 1 at end of split")
+        console.log(team2Array, "team 2 at end of split")
+        return [team1Array, team2Array]
+        
+    }
+
+    let playersCopy = players;
+    console.log(playersCopy, "data in playersCopy")
+
+    let newResult = splitTeamsNew(playersCopy);
+    console.log(newResult, "after being given players")
+
+
+
+
+    // function splitTeams(array, teamSize){
+    //     let index = 0;
+    //     let arrayLength = array.length;
+    //     let tempArray = [];
+
+    //     for (index = 0; index < arrayLength; index += teamSize) {
+    //         let myChunk = array.slice(index, index+teamSize);
+    //         tempArray.push(myChunk);
+    //     }
+    //     return tempArray;
+    // }
+    // let result = splitTeams(players, teamSize);
+    
+    // console.log(result, "original split function")
 
     return (
     <>
@@ -60,7 +61,7 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
                 />
 
                 <div className="player-item-container">
-                    { result[0].map(item => (
+                    { newResult[0].map(item => (
                         <PlayerItem
                             key={item}
                             name={item.name}
@@ -82,7 +83,7 @@ const FinalTeamsPage = ({ players, teamSize, teamName1, teamName2, colour1, colo
                 />
 
                 <div className="player-item-container">
-                    { result[1].map(item => (
+                    { newResult[1].map(item => (
                         <PlayerItem
                             key={item}
                             name={item.name}
