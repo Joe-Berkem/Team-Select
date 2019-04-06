@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/logo-purple.09139305.svg"
   },
   {
-    "revision": "d25a5c68de69150891d1",
-    "url": "/Team-Select/static/css/main.2165d4c8.chunk.css"
+    "revision": "5d3159a76273e815675a",
+    "url": "/Team-Select/static/css/main.4590463f.chunk.css"
   },
   {
     "revision": "9fd07a74791d8c26708b",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/bg-image.29e97e3a.jpg"
   },
   {
-    "revision": "2eb7beb3ef271d044c32",
-    "url": "/Team-Select/static/js/2.21616706.chunk.js"
+    "revision": "bd8f198ee2dc438c3432",
+    "url": "/Team-Select/static/js/2.2ad6c933.chunk.js"
   },
   {
     "revision": "891b5c2a443b8bdf4d01870ac5c51d98",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/download-icon.c6ab770f.svg"
   },
   {
-    "revision": "d25a5c68de69150891d1",
-    "url": "/Team-Select/static/js/main.739109ae.chunk.js"
+    "revision": "5d3159a76273e815675a",
+    "url": "/Team-Select/static/js/main.dce82472.chunk.js"
   },
   {
     "revision": "4ce12a7ddc71c115b86cc4471e6100bf",
@@ -64,23 +64,23 @@ self.__precacheManifest = [
     "url": "/Team-Select/static/media/Futura Bold.6d93ab94.otf"
   },
   {
-    "revision": "bdf372360326b14050e60ebe34df29a9",
-    "url": "/Team-Select/static/media/footy-pitch-bg-left.bdf37236.jpg"
-  },
-  {
     "revision": "bfa961a728d71d2e54d7f48e99cf883b",
     "url": "/Team-Select/static/media/footy-pitch-bg-right.bfa961a7.jpg"
+  },
+  {
+    "revision": "bdf372360326b14050e60ebe34df29a9",
+    "url": "/Team-Select/static/media/footy-pitch-bg-left.bdf37236.jpg"
   },
   {
     "revision": "238c32cd050af8099eeaa8f50dd04ec9",
     "url": "/Team-Select/static/media/Ubuntu-Regular.238c32cd.ttf"
   },
   {
-    "revision": "2eb7beb3ef271d044c32",
+    "revision": "bd8f198ee2dc438c3432",
     "url": "/Team-Select/static/css/2.457e6996.chunk.css"
   },
   {
-    "revision": "dd135d7d2743230139fab2e2db6e5a6a",
+    "revision": "422afd1a3dd029273bb8d654176cd218",
     "url": "/Team-Select/index.html"
   }
 ];
