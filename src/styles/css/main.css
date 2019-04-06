@@ -8,7 +8,6 @@
     src: url("../../assets/fonts/Futura Bold.otf") format("OpenType");
 }
 
-
 .wrapper {
     width: 100%;
     background-color: #38003c;    
@@ -20,7 +19,6 @@
 }
 
 /* HEADER */
-
 .header {
     width: 100%;
     background-color: #38003c;
@@ -60,7 +58,6 @@ button.reset-button-header:hover {
 }
 
 /* GENERAL */
-
 .container {
     min-width: 18.75em;
     min-height: 80vh;
@@ -86,9 +83,7 @@ a {
     margin-bottom: 0.5em!important;
 }
 
-
 /* LANDING PAGE */
-
 .logo-lp {
     height: 1.6em;
     text-align: center;
@@ -134,13 +129,11 @@ div.flex-row.lp-detail {
     margin-top: 1.15em;
 }
 
-
 .icon {
     padding: 2em;
 }
 
 /* BUTTONS */
-
 .button {
     height: 3em;
     width: 100%;
@@ -189,6 +182,7 @@ div.flex-row.lp-detail {
     justify-content: flex-end;
     align-items: center;
     width: 75%;
+    min-height: 1em;
     margin: 1em auto 0 auto;
     color: white;
     background-color: rgba(0, 255, 135, 0.45);
@@ -203,6 +197,7 @@ div.flex-row.lp-detail {
     padding: 0.5em;
     font-weight: bold;
     border: none;
+    margin: 0.5em 0;
 }
 
 .banner-reset-container button {
@@ -218,7 +213,6 @@ div.flex-row.lp-detail {
     background-color: #04f5ff;
 }
 
-
 .alert-banner-container {
     background-color: rgba(255, 0, 0, 1);
     margin: 0 auto 1em auto!important;
@@ -229,9 +223,7 @@ div.flex-row.lp-detail {
     font-weight: bold;
 }
 
-
 /*PLAYER INPUT PAGE */
-
 .player-input-page-wrapper {
     justify-content: center;
 }
@@ -309,7 +301,6 @@ div.flex-row.lp-detail {
     color: white;
     font-weight: bold;
 }
-
 
 /* LIST ITEM */
 .list-item-wrapper {
@@ -449,9 +440,7 @@ div.flex-row.lp-detail {
 }
 
 /* MEDIA QUERIES */
-
 @media only screen and (max-width: 400px) {
- 
     .container, .pitch-container1, .pitch-container2 {
         min-width: 100%;
         min-height: 60vh;
@@ -483,16 +472,18 @@ div.flex-row.lp-detail {
     .logo {
         height: 1.2em;
     }
-    
+
     button.reset-button-header {
         position: absolute;
         top: 0.75em;
         right: 1em;
-        font-size: 0.75em;
-        
+        font-size: 0.75em;  
+    }
+    
+    .list-item-wrapper {
+        width: 100%;
     }
 }
-
 
 @media only screen and (max-width: 640px) {
     .player-input-page-wrapper {

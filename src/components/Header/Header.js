@@ -3,7 +3,6 @@ import logo from '../../assets/logo.svg';
 import { Link } from "react-router-dom";
 
 const Header = ( { resetAll } ) => (
-
 	<>
 		<div className="header">
 			<img className="logo" src={logo} alt="Team Select Logo"/>
@@ -13,11 +12,10 @@ const Header = ( { resetAll } ) => (
 			<button
 				onClick={resetAll}
 				className="reset-button-header"
-				>Return to start
+			>Return to start
 			</button>
 		</Link>
 	</>
- 
 );
 
 export default Header;

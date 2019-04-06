@@ -4,8 +4,7 @@ import PlayerItem from '../../components/PlayerItem/PlayerItem'
 
 const FinalTeamsPage = ({ players, teamName1, teamName2, colour1, colour2, kit1, kit2 }) => {
 
-
-    function splitTeamsNew(array) {
+    function splitTeams(array) {
         let index = 0;
         let team1Array = [];
         let team2Array = [];
@@ -21,59 +20,57 @@ const FinalTeamsPage = ({ players, teamName1, teamName2, colour1, colour2, kit1,
     }
 
     let playersCopy = players;
-
-    let newResult = splitTeamsNew(playersCopy);
-   
+    let newResult = splitTeams(playersCopy);
 
     return (
-    <>
-        <section className="player-input-page-wrapper flex-row">
-            
-            <div className="pitch-container1">
-                <Banner
-                    text={teamName1}
-                    colour={colour1}
-                />
+        <>
+            <section className="player-input-page-wrapper flex-row">
+                
+                <div className="pitch-container1">
+                    <Banner
+                        text={teamName1}
+                        colour={colour1}
+                    />
 
-                <div className="player-item-container">
-                    { newResult[0].map(item => (
-                        <PlayerItem
-                            key={item}
-                            name={item.name}
-                            skill={item.skill}
-                            position={item.position}
-                            colour={colour1}
-                            kit={kit1}
-                        />
-                    ))}   
-                </div>     
-              
-            </div>
+                    <div className="player-item-container">
+                        { newResult[0].map(item => (
+                            <PlayerItem
+                                key={item}
+                                name={item.name}
+                                skill={item.skill}
+                                position={item.position}
+                                colour={colour1}
+                                kit={kit1}
+                            />
+                        ))}   
+                    </div>     
+                
+                </div>
 
-            <div className="pitch-container2">
+                <div className="pitch-container2">
 
-                <Banner
-                    text={teamName2}
-                    colour={colour2}
-                />
+                    <Banner
+                        text={teamName2}
+                        colour={colour2}
+                    />
 
-                <div className="player-item-container">
-                    { newResult[1].map(item => (
-                        <PlayerItem
-                            key={item}
-                            name={item.name}
-                            skill={item.skill}
-                            position={item.position}
-                            colour={colour2}
-                            kit={kit2}
-                        />
-                    ))} 
-                </div>        
-            
-            </div>
+                    <div className="player-item-container">
+                        { newResult[1].map(item => (
+                            <PlayerItem
+                                key={item}
+                                name={item.name}
+                                skill={item.skill}
+                                position={item.position}
+                                colour={colour2}
+                                kit={kit2}
+                            />
+                        ))} 
+                    </div>        
+                
+                </div>
 
-        </section>
-    </>
+            </section>
+        </>
     )
 };
 

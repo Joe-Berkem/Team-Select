@@ -51,9 +51,8 @@ class TeamForm extends Component {
                     className="name-input"
                     required
                 />
-                <Banner
-                    text="Select a kit"
-                />
+
+                <Banner text="Select a kit"/>
 
                 <div className="star-wrapper">
                     <img className="kit-icon" src={Kit1} alt="list-icon"/>
@@ -69,9 +68,7 @@ class TeamForm extends Component {
                     step="1"
                 />   
 
-                <Banner
-                    text="Select A Colour"
-                />
+                <Banner text="Select A Colour"/>
 
                 <input
                     onChange={this.handleChangeColour}

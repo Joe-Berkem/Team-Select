@@ -34,8 +34,7 @@ const PlayerItem = ({
             })()}
         </div>
         
-        <p className="player-name-text">{name}
-        </p>
+        <p className="player-name-text">{name}</p>
 
         <div className ="player-star-container"> 
             {(() => {

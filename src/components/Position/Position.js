@@ -5,9 +5,7 @@ const Position = ({text, color}) => (
         className="position-square"
         style={{backgroundColor: color}}
     >
-        <p>
-            {text}
-        </p>
+        <p>{text}</p>
     </div>
 
 );

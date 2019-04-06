@@ -1,19 +1,14 @@
 import React from 'react';
 
-
-const ButtonReset = ({color, text, onClick}) => {
-    return (
+const ButtonReset = ({color, text, onClick}) => (
     <div className="button-container">
             <button 
                 className="button"
                 style={{backgroundColor: color}}
                 onClick={onClick}
-            >
-                {text}
+            >{text}
             </button>
     </div>
-
-    );
-}
+);
 
 export default ButtonReset;

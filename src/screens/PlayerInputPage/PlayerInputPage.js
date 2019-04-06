@@ -9,46 +9,39 @@ import ButtonLink from '../../components/Button/ButtonLink';
 const PlayerInputPage = ({teamSize, players, resetPlayers}) => (
 
     <>
-    <section className="player-input-page-wrapper flex-row">
-        
-        <div className="container">
-            <Banner
-                text="Player Name"
-            />
-            <PlayerForm/>
-           
-        </div>
-
-        <div className="container">
-
-            <Banner
-                text="Team Size"
-            />
-
-            <TeamSize/>
-
-            {players.length < teamSize * 2 ? null
-            :
-            <ButtonLink
-                        link="/team-customisation"
-                        color="#e90052"
-                        text="Customise Teams"
-            />
-            }
+        <section className="player-input-page-wrapper flex-row">
             
+            <div className="container">
+                <Banner
+                    text="Player Name"
+                />
+                <PlayerForm/>
+            </div>
 
-            <BannerReset
-                text="Player List"
-                onClick={resetPlayers}
-            />
+            <div className="container">
+                <Banner
+                    text="Team Size"
+                />
+                <TeamSize/>
 
-            <PlayerList/>
-         
-        </div>
+                {players.length < teamSize * 2 ? null
+                :
+                <ButtonLink
+                            link="/team-customisation"
+                            color="#e90052"
+                            text="Customise Teams"
+                />
+                }
 
-    </section>
-</>
-
+                <BannerReset
+                    text="Player List"
+                    onClick={resetPlayers}
+                />
+                <PlayerList/>
+            
+            </div>
+        </section>
+    </>
 );
 
 export default PlayerInputPage;
