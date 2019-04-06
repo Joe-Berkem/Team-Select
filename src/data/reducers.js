@@ -3,7 +3,6 @@ import initial from "./initial";
 const submitPlayer = (state, action) => ({...state, ...action})
 
 const addToPlayers = (state) => {
-    console.log (state,"add to players function")
     return {...state, players: [...state.players, 
         { name:state.playerName, skill:state.playerSkillLevel, position:state.playerPosition} ]}
 }
