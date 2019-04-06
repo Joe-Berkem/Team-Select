@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import FinalTeamsPage from './FinalTeamsPage';
 
-
 const mapStateToProps = state => {
   return {
        players: state.players,
@@ -14,6 +13,5 @@ const mapStateToProps = state => {
        kit2: state.kit2,
   };
 };
-
 
 export default connect(mapStateToProps)(FinalTeamsPage);

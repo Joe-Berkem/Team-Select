@@ -5,7 +5,6 @@ const NoStar = () => (
     <div className="star-container">
         <img className="star-icon" src={NoStarIcon} alt="list-icon"/>
     </div>
-
 );
 
 export default NoStar;

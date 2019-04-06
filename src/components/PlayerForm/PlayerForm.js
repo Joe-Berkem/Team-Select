@@ -8,7 +8,6 @@ import Star3 from '../../components/Stars/Star3';
 import ButtonOnClick from '../ButtonOnClick/ButtonOnClick';
 import Position from '../Position/Position';
 
-
 class PlayerForm extends Component {
     constructor(props) {
         super(props);
@@ -37,7 +36,7 @@ class PlayerForm extends Component {
     }
 
     onKeyPress(event) {
-        if (event.which === 13 /* Enter */) {
+        if (event.which === 13) {
           event.preventDefault();
         }
     }
@@ -45,8 +44,7 @@ class PlayerForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.submitPlayer(this.state);
-        this.setState({ playerName: "", playerSkillLevel: 0,
-        playerPosition: 0,});
+        this.setState({ playerName: "", playerSkillLevel: 0, playerPosition: 0,});
     }
 
     render() {
@@ -66,6 +64,7 @@ class PlayerForm extends Component {
                     value={this.state.playerName}
                     required
                 />
+
                 <Banner
                     text="Skill Level"
                 />
@@ -127,7 +126,6 @@ class PlayerForm extends Component {
                     text="Reset player list or increase team size"
                 />
                 }
-
             </form>
         );
     }

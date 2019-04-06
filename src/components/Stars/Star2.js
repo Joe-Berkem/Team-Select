@@ -6,7 +6,6 @@ const Star2 = () => (
         <img className="star-icon" src={StarIcon} alt="list-icon"/>
         <img className="star-icon" src={StarIcon} alt="list-icon"/>
     </div>
-
 );
 
 export default Star2;

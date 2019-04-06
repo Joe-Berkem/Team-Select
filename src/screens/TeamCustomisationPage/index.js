@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import TeamCustomisationPage from './TeamCustomisationPage.js';
 import { resetTeams, sortPlayersSkills } from '../../data/actions';
 
-
 const mapStateToProps = (state) => {
   return {
     teamName1: state.teamName1,

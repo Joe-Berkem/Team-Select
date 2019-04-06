@@ -6,7 +6,6 @@ import ButtonLink from '../../components/Button/ButtonLink';
 import purpleLogo from '../../assets/logo-purple.svg';
 
 const LandingPage = () => (
-
     <>
         <section className="landing-page-wrapper">
             <div className="container">
@@ -35,7 +34,6 @@ const LandingPage = () => (
                     color="#e90052"
                     text="Get Started"
                 />
-             
             </div>
         </section>
     </>

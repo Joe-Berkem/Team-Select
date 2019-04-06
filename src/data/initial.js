@@ -11,4 +11,5 @@ const initial = {
     colour2: "#0000ff",
     teamSize: 5,
 }
+
 export default initial;

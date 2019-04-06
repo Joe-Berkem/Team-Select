@@ -2,7 +2,6 @@ import initial from "./initial";
 
 const submitPlayer = (state, action) => ({...state, ...action})
 
-
 const addToPlayers = (state) => {
     console.log (state,"add to players function")
     return {...state, players: [...state.players, 
@@ -20,7 +19,6 @@ const sortPlayersSkills = (state) => {
     }); 
     return {...state, players};
 };
-
 
 const incrementTeamSize = (state) => {
     return { ...state, teamSize: state.teamSize + 1 };

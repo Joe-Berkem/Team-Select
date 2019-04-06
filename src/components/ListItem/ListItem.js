@@ -40,30 +40,7 @@ const ListItem = ({
             </p>
         </div>
 
-
     </div>
-
-
 )
 
 export default ListItem;
-
-// {/* 
-
-//         {{
-//         if ({skill} === 3 ) {
-//         return <Star3/>
-//         }
-
-//         if (skill === 2 ) {
-//         return <Star2/>
-//         }
-
-//         if (skill === 1 ) {
-//         return <Star1/>
-//         }
-
-//         else {
-//             return <NoStar/>
-//         } */}
-        

@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import TeamForm from './TeamForm.js';
 import { submitTeam1 } from '../../data/actions';
 
-
 const mapStateToProps = (state) => {
   return {
     teamName1: state.teamName1,

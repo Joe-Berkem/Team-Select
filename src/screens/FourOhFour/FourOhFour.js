@@ -3,7 +3,6 @@ import ButtonLink from '../../components/Button/ButtonLink';
 import purpleLogo from '../../assets/logo-purple.svg';
 
 const FourOhFour = () => (
-
     <>
         <section className="landing-page-wrapper">
             <div className="container">
