@@ -112,7 +112,7 @@ Although in most cases the splitTeams function renders fair teams the fact is th
 
 #### BEM class naming
 
-In hindsight my CSS class naming could be improved for clarity. If I were to it again I would utilise BEM class naming for a more logical class naming structure. 
+In hindsight my CSS class naming could be improved for clarity. If I were to do it again I would utilise BEM class naming for a more logical class naming structure. 
 
 #### Kit SVGs as components
 
